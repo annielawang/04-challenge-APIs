@@ -186,7 +186,7 @@ var viewHighScore = function() {
   for (let i = 0; i < allRecords.length; i++) {
     var recordLi = document.createElement("li");
     const recordLiContent = allRecords[i].name + ":" + allRecords[i].score;
-    recordLi.appendChild(document.createTextNode(recordLiContent));
+    recordLi.innerHTML = recordLiContent;
     allRecordsDiv.appendChild(recordLi);
   }
   // TODO: sort the record and pick the top N result
