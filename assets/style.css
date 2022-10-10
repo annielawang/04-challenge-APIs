@@ -1,0 +1,91 @@
+/* Body Styles */
+
+body {
+    font-family: Verdana;
+    background-color: #ffffff;
+    margin: 0px;
+  }
+  
+  /* Header Styles  */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #85dbf5;
+    color: #140e0e;
+    padding: 3vh;
+  }
+    
+  time {
+    min-width: 85px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Main Styles */
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Button Styles */
+  
+  .button {
+    display: block;
+    color: #ffffff;
+    background-color: #85dbf5;
+    padding: 2vh;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  /* Card Styles */
+  
+  .card {
+    max-width: 80%;
+    margin-top: 15vh;
+    border: solid;
+    border-width: 2px;
+    padding: 5vw;
+    border-radius: 30px;
+    border-color: lightgray;
+  }
+  
+  /* Start Quiz Styles */
+  
+  #start_quiz_btn {
+    display: inline;
+    text-align: center;
+  }
+  
+  /* Questions Styles */
+  
+  .button {
+    width: 100%;
+    text-align: left;
+    margin: 5px;
+  }
+  
+  /* Score Page Styles */
+  
+  .inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  #initials {
+    width: 25%;
+    margin: 8px;
+    padding: 1vh;
+  }
+  
+  /* High score page Styles */
+  
+  .highscore-list {
+    padding-inline-start: 20px;
+  }
