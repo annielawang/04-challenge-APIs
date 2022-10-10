@@ -9,58 +9,53 @@
 </head>
 <body>
     <header>
-        <a href="">View High Scores</a>
-        <time>Time:<span></span></time>
+        <a href="#" onclick="viewHighScore()" id="view_high_score">View High Scores</a>
+        <time>Time:<span id="time_left"></span></time>
     </header>
 
     <main>
         <!-- first page -->
-        <div>
+        <div id="first_page" class="card">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-            <button>Start Quiz</button>
+            <button id="start_quiz_btn">Start Quiz</button>
         </div>
         <!-- question pages -->
-        <div>
+        <div id="question_page" hidden class="card">
             <!-- question -->
-            <h2></h2>
+            <h2 id="q_title"></h2>
             <!-- answers -->
-            <section>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-            </section>
+            <div id=quiz-options>
+                <button id="q_an_0" class="button"></button>
+                <button id="q_an_1" class="button"></button>
+                <button id="q_an_2" class="button"></button>
+                <button id="q_an_3" class="button"></button>
+            </div>
             <!-- results: correct or wrong -->
             <section>
                 <p></p>
             </section>
         </div>
-        <!-- enter initial page -->
-        <div>
+        <!-- enter name page -->
+        <div id="result_page" hidden>
             <h2>All done!</h2>
             <p>Your final score is 
-                <span></span>
+                <span id="final_score"></span>
             </p>
-            <form action="">
-                <label for="">
-
-                </label>
-                <input type="text">
-                <input type="button" value="Submit">
+            <form>
+                <label>Enter your name: </label>
+                <input id="name_txt" type="text">
+                <input id="name_sbm_btn" type="button" value="Submit" class="button">
             </form>
         </div>
         <!-- scores page -->
-        <div>
+        <div id="high_score_page" hidden>
             <h2>High scores</h2>
             <!-- list of high scores -->
+            <div id="all_records"></div>
             <div>
-                <ul>
-                </ul>
-            </div>
-            <div>
-                <button>Go Back</button>
-                <button>Clear High scores</button>
+                <button id="go_back_btn" onclick="homePage()" class="button">Go Back</button>
+                <button id="clear_high_btn" onclick="clearHighScore()" class="button">Clear High scores</button>
             </div>
                 
         </div>
